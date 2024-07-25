@@ -1,0 +1,78 @@
+
+body{
+    width:100%;
+}
+
+/*for header*/
+#header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1px 2px; 
+   background:  rgb(241, 209, 228); 
+   box-shadow: 0px 4px 5px rgba(157, 158, 153, 0.888); 
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;          
+    padding-block: 1px 2px;
+}
+#navbar li{
+list-style: none;
+padding: 0 10px;
+position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(84, 104, 250);
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(160, 160, 158);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: " ";
+    width: 35px;
+    height: 2px;
+    background: rgb(160, 160, 158);
+    position: absolute;
+    bottom: -4px;
+    left:20px;
+}
+/*for home page*/
+#wow{
+    
+}
+/*for shop page*/
+#shop {
+     
+}
+/*for blog page*/
+#blog {
+
+}
+/*for about page*/
+#about {
+      
+}
+/*for contact page*/
+#contact {
+
+}
+/*for cart page*/
+#cart {
+
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/

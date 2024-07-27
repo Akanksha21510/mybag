@@ -1,6 +1,5 @@
 
-body{
-    width:100%;
+html, body {width: 100vw; height: 100vh;
 }
 
 /*for header*/
@@ -9,34 +8,37 @@ body{
    align-items: center;
    justify-content: space-between;
    padding: 1px 2px; 
-   background:  rgb(241, 209, 228); 
-   box-shadow: 0px 4px 5px rgba(157, 158, 153, 0.888); 
+   background:  rgb(115, 221, 226); 
+   box-shadow: 0px 5px 15px  rgb(108, 108, 106);
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left:0;
 }
-
 #navbar {
     display: flex;
     align-items: center;
     justify-content: center;          
-    padding-block: 1px 2px;
+    padding-block: 1px 2px;      
 }
 #navbar li{
 list-style: none;
 padding: 0 10px;
-position: relative;
+/*position: relative;*/
 
 }
 #navbar li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 16px;   
     font-weight: 600;
-    color: rgb(84, 104, 250);
+    color: rgb(37, 61, 245);
     transition: 0.3s ease;
 }
 #navbar li a:hover,
 #navbar li a.active{
     color: rgb(160, 160, 158);
 }
-#navbar li a.active::after,
+/*#navbar li a.active::after,
 #navbar li a:hover::after{
     content: " ";
     width: 35px;
@@ -45,15 +47,50 @@ position: relative;
     position: absolute;
     bottom: -4px;
     left:20px;
-}
+}*/
 /*for home page*/
-#wow{
-    
+#wow{  
+    background-image:url("images/Nhome1.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom 45% left 0%;
+    background-color: beige;
+    padding:0 60px;
+    display:flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
 }
+#wow h4{
+    padding-bottom: 15px;
+}
+#wow h1{
+    color: rgb(138, 95, 65);
+    font-size-adjust: inherit;
+}
+#wow h1{
+    text-shadow: 0;
+}
+#wow button.B1{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: rgb(244, 142, 9);
+    border: 0;
+    padding: 14px 80px 14px 56px;
+    text-align: center;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font size: 15px;
+}
+#wow button.B1{
+    width: 15px;
+}
+
 /*for shop page*/
 #shop {
      
-}
+} 
 /*for blog page*/
 #blog {
 
@@ -63,7 +100,7 @@ position: relative;
       
 }
 /*for contact page*/
-#contact {
+#contact {     
 
 }
 /*for cart page*/
@@ -75,4 +112,4 @@ position: relative;
 /**/
 /**/
 /**/
-/**/
+/**/  

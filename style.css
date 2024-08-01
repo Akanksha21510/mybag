@@ -1,6 +1,12 @@
 
 html, body {width: 100vw; height: 100vh;
 }
+.section-p1{
+    padding:40px 80px ;
+}
+.section-m1{
+margin: 40px 0;
+}
 
 /*for header*/
 #header {
@@ -9,7 +15,7 @@ html, body {width: 100vw; height: 100vh;
    justify-content: space-between;
    padding: 1px 2px; 
    background:  rgb(115, 221, 226); 
-   box-shadow: 0px 5px 15px  rgb(108, 108, 106);
+   box-shadow: 0px 5px 15px  rgb(170, 170, 168);
    z-index: 999;
    position: sticky;
    top: 0;
@@ -54,12 +60,12 @@ padding: 0 10px;
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: bottom 45% left 0%;
+    background-position: bottom 45% left 1%;
     background-color: beige;
-    padding:0 60px;
+    padding:0 80px;
     display:flex;
     flex-direction: column;
-    align-self: flex-start;
+    align-items: flex-start;
     justify-content: center;
 }
 #wow h4{
@@ -67,26 +73,54 @@ padding: 0 10px;
 }
 #wow h1{
     color: rgb(138, 95, 65);
-    font-size-adjust: inherit;
+    padding-top: 0%;
+    font-size:250%;
 }
-#wow h1{
-    text-shadow: 0;
-}
-#wow button.B1{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    color: rgb(244, 142, 9);
-    border: 0;
-    padding: 14px 80px 14px 56px;
-    text-align: center;
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font size: 15px;
-}
-#wow button.B1{
-    width: 15px;
+#wow p{
+    padding: bottom 0%;
+    color: darkgrey;
 }
 
+#wow button.B1{
+    background-repeat: no-repeat;
+    background-color:rgb(251, 221, 102);
+    color: rgb(27, 26, 25);
+    border: 0;
+    padding: 12px 75px 12px 60px;
+    text-align: center;
+    display: inline ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 15px 15px 20px rgb(199, 199, 198) ;
+    border: 1px solid;
+    border-radius:4px ;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 7px 7px 34px rgb(251, 221, 102);
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(4, 5, 5); 
+    background-color:rgb(165, 164, 161);
+}
 /*for shop page*/
 #shop {
      

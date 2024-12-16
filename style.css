@@ -4,7 +4,7 @@ html, body {
     height: 100%;
     margin: 0%;
     padding: 0%;
-    font-family: Arial, sans-serif;
+
 }
 .section-p1{
     padding:40px 80px ;
@@ -18,7 +18,7 @@ margin: 40px 0;
    align-items: center;
    justify-content: space-between;
    padding: 1px 2px; 
-   background:  rgb(149, 232, 238); 
+   background-color:rgb(248, 222, 117);
    box-shadow: 0px 5px 15px  rgb(170, 170, 168);
    z-index: 999;
    position: sticky;
@@ -41,7 +41,7 @@ padding: 0 10px;
     text-decoration: none;
     font-size: 16px;   
     font-weight: 600;
-    color: rgb(37, 61, 245);
+    color: rgb(15, 15, 15);
     transition: 0.3s ease;
 }
 #navbar li a:hover,
@@ -59,10 +59,12 @@ padding: 0 10px;
     left:20px;
 }*/
 /*for home page*/
-#wow{  
-    background-image:url("images/sNhome1.png");
-    height: 90vh;
-    background-size: cover;
+#wow{
+    background-image:url("images/BG.webp");
+    
+   
+    background-size:cover;
+    height: 100vh;
     background-position: bottom 45% left 1%;
     background-color: rgb(246, 244, 241);
     padding:0 80px;
@@ -74,15 +76,21 @@ padding: 0 10px;
 
 #wow h4{
     padding-bottom: 15px;
+    background-color: #fff;
 }
 #wow h1{
-    color: rgb(26, 24, 23);
+    color: #000;
     padding-top: 0%;
     font-size:250%;
+    background-color: #fff;
 }
 #wow p{
     padding: bottom 0%;
-    color: darkgrey;
+    color: #000;
+}
+.text{
+    align-content: center;
+
 }
 
 #wow button.B1{
@@ -96,26 +104,31 @@ padding: 0 10px;
     display: inline ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
+    transform:skew(25deg);
+
 }
 
 #feature{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    align-content: center;
+    background-color: #f3d998;
 }
 #feature .fe-box{
-    color: rgb(222, 220, 221);
-    width: 180px;
+    background-image: url(images/now.jpg);
+    color: rgb(240, 236, 238);
+    width: 250px;
     text-align: center;
     padding: 25px 15px;
-    box-shadow: 7px 7px 15px rgb(235, 235, 233) ;
+     bvbox-shadow: 7px 7px 15px rgb(235, 235, 233) ;
     border: 1px solid;
     border-radius:4px ;
     margin: 15px 0;
 }
 #feature .fe-box:hover{
-    box-shadow: 7px 7px 15px rgb(186, 185, 184);
+    box-shadow: 3px 3px 10px rgb(186, 185, 184);
 }
 #feature .fe-box img{
     width: 100%;
@@ -135,11 +148,21 @@ padding: 0 10px;
     background-repeat: repeat-x;
     background-position: 0 0;
 }*/
-#product1 {
- text-align: center;
- background-color: rgb(236, 222, 117);
+#pro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    background-color: #f4e96a;
 }
-#product1 .pro{
+/*#product1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}*/
+.pro{
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
@@ -147,11 +170,11 @@ padding: 0 10px;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 7px 7px 15px #d9dadb;
-    margin: 15px 0;
     transition: 0.2s ease;
+    background-color: #d1fb7d;
 }
 #product1 .pro:hover{
-    box-shadow: #949495;
+    box-shadow: #d8f45d;
 }
 #featured-pro .img{
     width: 100%;
@@ -193,7 +216,7 @@ footer .footer-column {
 }
 
 footer .footer-column h3 {
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
     font-size: 16px;
     border-bottom: 1px solid #3a4553;
     padding-bottom: 5px;
